@@ -1,0 +1,7 @@
+@function rem($px, $base: 16px) {
+  @return calc($px / $base * 1rem);
+}
+
+@function percent($px, $base: 1526) {
+  @return ($px / $base) * 100%;
+}
