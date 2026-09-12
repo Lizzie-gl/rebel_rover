@@ -4,6 +4,7 @@
     <meta charset="Utf-8" />
     <meta name="viewport" content="with=device-with, initial-scale=1.0" />
     <title>Rebel Rover</title>
+    <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
     <div class="initial">
@@ -19,8 +20,9 @@
         </ul>
       </nav>
       <form>
-        <input type="text" placeholder="Search..." />
-        <button type="submit">Search</button>
+        <input type="text"
+         placeholder="Search..." />
+        <button type="submit"><img src="./media/search.png"/></button>
         <!-- TO DO hide this! -->
       </form>
     </header>
@@ -29,28 +31,27 @@
         <h2>Make in your journey</h2>
         <p>Explore the world with what you love beautiful natural beauty.</p>
         <ul>
-          <li>Location</li>
-          <li>Date</li>
-          <li>People</li>
-          <li>Explore now</li>
+          <li><a href="#">Location &#709;</a></li>
+          <li><a href="#">Date &#709;</a></li>
+          <li><a href="#">People &#709;</a></li>
+          <li><button>Explore now</button></li>
         </ul>
-        <p>Popular Place : Bali, Istanbul, Rome, Paris.</p>
+        <p><span> Popular Place : </span>, Istanbul, Rome, Paris.</p>
       </section>
     </div>
       <section class="explore" class="center">
         <div class="explore__info">
-          <div class="explore__info-buttons">
-            <button class="arrow">arrow</button>
-            <button class="arrow">arrow</button>
-          </div>
           <h2>Explore new worlds with exotic natural scenery</h2>
           <p>Explore the world with what you love beautiful natural beauty.</p>
+           <div class="explore__info-buttons">
+            <button class="arrow">&#x3C;</button>
+            <button class="arrow">&#x3E;</button>
+           </div>
         </div>
         <div class="explore__places">
           <div class="explore__places-option">
-            <img src="./media/explore-tourists.png" alt="two-tourists" />
             <div class="explore__places-option-info">
-              <span>"</span>
+              <span>&#8222;</span>
               <h3>Borjomi, Georgia</h3>
               <p>
                 Borjomi is a beautiful tourist spot and is visited by many
@@ -58,10 +59,9 @@
               </p>
             </div>
           </div>
-          <div class="explore__places-option">
-            <img src="./media/explore-bali.png" alt="bali-view" />
+          <div class="explore__places-option explore__places-option--two">
             <div class="explore__places-option-info">
-              <span>"</span>
+              <span>&#8222;</span>
               <h3>Bali, Indonesia.</h3>
               <p>
                 Bali is a beautiful tourist spot and is visited by many
@@ -69,10 +69,9 @@
               </p>
             </div>
           </div>
-          <div class="explore__places-option">
-            <img src="./media/explore-ny.png" alt="ny-view" />
+          <div class="explore__places-option explore__places-option--three">
             <div class="explore__places-option-info">
-              <span>"</span>
+              <span>&#8222;</span>
               <h3>NY</h3>
               <p>
                 Ny is a beautiful tourist spot and is visited by many travelers.
@@ -83,12 +82,12 @@
       </section>
       <section class="benefits" class="center">
         <div class="benefits__title">
-          <div class="benefits__title-buttons">
-            <button>arrow</button>
-            <button>arrow</button>
-          </div>
           <h2>Why choose us?</h2>
           <p>our services have been trusted by world travelers.</p>
+          <div class="benefits__title-buttons">
+          <button class="arrow">&#x3C;</button>
+          <button class="arrow">&#x3E;</button>
+          </div>
         </div>
         <div class="benefits__info">
           <div class="benefits__info-details">
@@ -137,19 +136,22 @@
       </section>
       <section class="reviews">
         <div class="reviews__title">
-          <p>TESTIMONIAL</p>
+          <p class="testimonial">TESTIMONIAL</p>
           <h2>What our client say</h2>
           <p>Create a visual identity for your company and a overall brand</p>
         </div>
         <div class="reviews__title-buttons">
-          <button>arrow</button>
-          <button>arrow</button>
+          <button class="arrow">&#x3C;</button>
+          <button class="arrow">&#x3E;</button>
         </div>
         <div class="reviews__details">
           <div class="reviews__details-people">
-            <img src="./media/sara.jpg" alt="traveler-pic" />
+            <div class="reviews__details-people-top">
+            <img src="./media/sara.jpg" alt="traveler-pic" class="prof-pic"/>
             <h4>Sara Jay</h4>
             <p>Traveler</p>
+            </div>
+            <div class="reviews__details-people-bottom">
             <div>
               <span><img src="./media/Star 1.png" alt="star" /></span>
               <span><img src="./media/Star 1.png" alt="star" /></span>
@@ -161,11 +163,15 @@
               Before we define any approach, we need to deline the brands
               overall goal. We then need to dive.
             </p>
+            </div>
           </div>
           <div class="reviews__details-people">
-            <img src="./media/cristian.jpg" alt="traveler-pic" />
+            <div class="reviews__details-people-top">
+            <img src="./media/cristian.jpg" alt="traveler-pic" class="prof-pic"/>
             <h4>Cristian Daniel</h4>
             <p>Traveler</p>
+            </div>
+            <div class="reviews__details-people-bottom">
             <div>
               <span><img src="./media/Star 1.png" alt="star" /></span>
               <span><img src="./media/Star 1.png" alt="star" /></span>
@@ -177,11 +183,15 @@
               Before we define any approach, we need to deline the brands
               overall goal. We then need to dive.
             </p>
+            </div>
           </div>
           <div class="reviews__details-people">
-            <img src="./media/hasan.jpg" alt="traveler-pic" />
+            <div class="reviews__details-people-top">
+            <img src="./media/hasan.jpg" alt="traveler-pic" class="prof-pic"/>
             <h4>Kausar Hasan</h4>
             <p>Traveler</p>
+            </div>
+            <div class="reviews__details-people-bottom">
             <div>
               <span><img src="./media/Star 1.png" alt="star" /></span>
               <span><img src="./media/Star 1.png" alt="star" /></span>
@@ -193,8 +203,8 @@
               Before we define any approach, we need to deline the brands
               overall goal. We then need to dive.
             </p>
+            </div>
           </div>
-        </div>
       </section>
     </main>
     <footer class="center">
@@ -219,13 +229,14 @@
       </section>
       <section class="footer-upper">
         <div class="footer-upper__name">
-          <h2><img src="./media/logo1 1.png" alt="main-logo" /></h2>
+          <h2><img src="./media/logo 2.png" alt="main-logo" /></h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
             pharetra condimentum.
           </p>
         </div>
         <ul class="footer-upper__information">
+          <li>Contact Information</li>
           <li>
             <a href="#" target="_blank">
               <img src="./media/ic_baseline-place.png" alt="baseline-icon" />
@@ -255,29 +266,23 @@
           <li><a href="#">Tours</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
-        <ul class="footer-upper__social">
-          <li>Follow US</li>
-          <li>
+        <div class="footer-upper__social">
+          <p>Follow US</p>
+          <div class="footer-upper__social-links">
             <a href="https://www.facebook.com/"
               ><img src="./media/fb.png" alt="facebook-logo"
             /></a>
-          </li>
-          <li>
             <a href="https://x.com/"
               ><img src="./media/twitter.png" alt="twitter-logo"
             /></a>
-          </li>
-          <li>
             <a href="https://www.youtube.com/"
               ><img src="./media/yt.png" alt="youtube-logo"
-            /></a>
-          </li>
-          <li>
+            /></a>        
             <a href="https://www.instagram.com/"
               ><img src="./media/insta.png" alt="instagram-logo"
-            /></a>
-          </li>
-        </ul>
+            /></a>   
+          </div>     
+        </div>
       </section>
       <section class="footer-lower">
         <p>
